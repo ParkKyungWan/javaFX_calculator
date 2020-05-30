@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:controller="application.Controller" maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: rgba(255,250,250,1);" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Text fill="WHITE" fontSmoothingType="LCD" smooth="false" stroke="#ffa9a9" strokeType="OUTSIDE" strokeWidth="3.0" text="수수료 계산기" translateX="98.0" translateY="45.0">
+         <font>
+            <Font name="10X10 Bold" size="35.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="input" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0" translateX="120.0" translateY="120.0">
+         <font>
+            <Font name="10X10" size="14.0" />
+         </font>
+      </TextArea>
+      <Text fill="#ff6496" strokeType="OUTSIDE" strokeWidth="0.0" text="판매가격" translateX="40.0" translateY="100.0">
+         <font>
+            <Font name="10X10" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#ff6496" strokeType="OUTSIDE" strokeWidth="0.0" text="수수료" translateX="40.0" translateY="115.0">
+         <font>
+            <Font name="10X10" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#ff6496" strokeType="OUTSIDE" strokeWidth="0.0" text="실수령금" translateX="40.0" translateY="130.0">
+         <font>
+            <Font name="10X10" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="output1" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.68" prefHeight="30.0" prefWidth="250.0" style="-fx-background-color: rgba(255,169,169,1);;" translateX="120.0" translateY="80.0">
+         <font>
+            <Font name="10X10" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="output2" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="250.0" translateX="120.0" translateY="80.0">
+         <font>
+            <Font name="10X10" size="14.0" />
+         </font>
+      </TextField>
+      <Button mnemonicParsing="false" onAction="#calculate" style="-fx-background-color: rgb(255,169,169,1);" text="계산하기" textFill="WHITE" translateX="310.0" translateY="95.0" onAction="#calculate">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="10X10" size="12.0" />
+         </font></Button>
+      <CheckBox fx:id="pc" mnemonicParsing="false" text="PC방 할인(30%)" textFill="#ff6496" translateX="200.0" translateY="65.0">
+         <font>
+            <Font name="10X10" size="12.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="top" mnemonicParsing="false" text="TOP 할인 (20%)" textFill="#ff6496" translateX="200.0" translateY="70.0">
+         <font>
+            <Font name="10X10" size="12.0" />
+         </font>
+      </CheckBox>
+      <ImageView fitHeight="158.0" fitWidth="200.0" scaleX="0.0">
+         <image>
+            <Image url="@Cowi8f8VIAA5udk.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="158.0" fitWidth="200.0" scaleX="0.9" scaleY="0.9" style="-fx-opacity: 0.7;" translateX="-7.0" translateY="-133.0">
+         <image>
+            <Image url="@Cowi8f8VIAA5udk.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="125.0" fitWidth="200.0" style="-fx-opacity: 0.7;" translateX="100.0" translateY="-260.0">
+         <image>
+            <Image url="@sakura_PNG37.png" />
+         </image>
+      </ImageView>
+      <Text fill="#ff669960" strokeType="OUTSIDE" strokeWidth="0.0" text="SAE EDITION_" translateX="300.0" translateY="-280.0">
+         <font>
+            <Font name="10X10 Bold" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</VBox>
